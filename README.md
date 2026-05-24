@@ -11,15 +11,15 @@ Note that RTP can be part of a Clearing and Settlement business solution but sti
 
 # There will be three logical layers in the system
 
-* The Ingestion Layer (S3 → Ingestion Service) — its job is to ingest (and reject external input), while never letting a malformed or unknown-party transaction into the system.
+* The Ingestion Layer (S3 -> Ingestion Service) - its job is to ingest (and reject external input), while never letting a malformed or unknown-party transaction into the system.
 
-* The Processing Layer (Kafka → Netting Engine) is about accumulating state within a settlement cycle — every validated transaction adjusts the running bilateral position between two RTNs (Unique ACH Routing Numbers for source and destination banks). This is where the financial logic lives.
+* The Processing Layer (Kafka -> Netting Engine) is about accumulating state within a settlement cycle — every validated transaction adjusts the running bilateral position between two RTNs (Unique ACH Routing Numbers for source and destination banks). This is where the financial logic lives.
 
-* The Settlement Layer (Settlement Service → Fed) is a one-way gate — it reads the final netted positions, computes each participant's single net obligation or entitlement (debit/credit), and publishes irrevocable settlement instructions. Once this fires, you cannot undo it.
+* The Settlement Layer (Settlement Service -> Fed) is a one-way gate - it reads the final netted positions, computes each participant's single net obligation or entitlement (debit/credit), and publishes irrevocable settlement instructions. Once this fires, you cannot undo it.
 
 * We can add a Reconciliation Layer after the Settlement in a future branch to complete the full circle
 
-* This is going to be a living and breathing repo and I have full AI embedded features in mind, especially around the API and dashboards
+* This is going to be a living and breathing repo and I have an AI Fraud Detection model (integrates with ingestion layer) and AI embedded features in mind, especially around the API and dashboards
 
 * OpenTelemetry and Observability features will also be built 
 

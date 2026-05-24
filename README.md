@@ -17,7 +17,5 @@ Note that RTP can be part of a Clearing and Settlement business solution but sti
 - **Batch Processing**: Aggregates transactions into batches for efficient processing and settlement.
 - **Scalability**: Designed to handle high transaction volumes with low latency, making it suitable for large financial institutions.
 - **Audit Trail**: Maintains a comprehensive audit trail of all transactions and settlement activities for compliance and regulatory purposes.
-- **Scalable Architecture**: Built on a scalable architecture that can accommodate growing transaction volumes and evolving business needs without compromising performance or reliability.
-
 
 

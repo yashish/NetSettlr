@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSettlr.Common", "NetSett
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSettlr.Tests", "NetSettlr.Tests\NetSettlr.Tests.csproj", "{272C2CA4-691A-4744-B8A3-2F8FAA870220}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{C8BDC0AA-B287-4C49-B4A0-BF4BB7D5435D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,18 @@ Global
 		{272C2CA4-691A-4744-B8A3-2F8FAA870220}.Release|x64.Build.0 = Release|Any CPU
 		{272C2CA4-691A-4744-B8A3-2F8FAA870220}.Release|x86.ActiveCfg = Release|Any CPU
 		{272C2CA4-691A-4744-B8A3-2F8FAA870220}.Release|x86.Build.0 = Release|Any CPU
+		{C8BDC0AA-B287-4C49-B4A0-BF4BB7D5435D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8BDC0AA-B287-4C49-B4A0-BF4BB7D5435D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8BDC0AA-B287-4C49-B4A0-BF4BB7D5435D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C8BDC0AA-B287-4C49-B4A0-BF4BB7D5435D}.Debug|x64.Build.0 = Debug|Any CPU
+		{C8BDC0AA-B287-4C49-B4A0-BF4BB7D5435D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C8BDC0AA-B287-4C49-B4A0-BF4BB7D5435D}.Debug|x86.Build.0 = Debug|Any CPU
+		{C8BDC0AA-B287-4C49-B4A0-BF4BB7D5435D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8BDC0AA-B287-4C49-B4A0-BF4BB7D5435D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8BDC0AA-B287-4C49-B4A0-BF4BB7D5435D}.Release|x64.ActiveCfg = Release|Any CPU
+		{C8BDC0AA-B287-4C49-B4A0-BF4BB7D5435D}.Release|x64.Build.0 = Release|Any CPU
+		{C8BDC0AA-B287-4C49-B4A0-BF4BB7D5435D}.Release|x86.ActiveCfg = Release|Any CPU
+		{C8BDC0AA-B287-4C49-B4A0-BF4BB7D5435D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

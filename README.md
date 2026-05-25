@@ -9,6 +9,10 @@ Note that RTP can be part of a Clearing and Settlement business solution but sti
 
 ![ACH Wires Netting Settlement Architecture](ach_wires_netting_settlement_architecture.svg)
 
+# ERD
+
+![ERD](image.png)
+
 # There will be three logical layers in the system
 
 * The Ingestion Layer (S3 -> Ingestion Service) - its job is to ingest (and reject external input), while never letting a malformed or unknown-party transaction into the system.

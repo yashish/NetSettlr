@@ -7,7 +7,7 @@ Note that RTP can be part of a Clearing and Settlement business solution but sti
 
 # Here's the High level Architecture of the System we are going to build
 
-![ACH Wires Netting Settlement Architecture](ach_wires_netting_settlement_architecture.svg)
+![ACH Wires Netting Settlement Architecture|400](ach_wires_netting_settlement_architecture.svg)
 
 # ERD
 

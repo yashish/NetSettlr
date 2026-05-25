@@ -11,7 +11,7 @@ Note that RTP can be part of a Clearing and Settlement business solution but sti
 
 # ERD
 
-![ERD](image.png)
+<img src="image.png" alt="ERD" width="85%">
 
 # There will be three logical layers in the system
 

@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSettlr.Tests", "NetSettl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{C8BDC0AA-B287-4C49-B4A0-BF4BB7D5435D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{6CEE5A5A-9837-46B4-8012-0E0D00AA8EBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,18 @@ Global
 		{C8BDC0AA-B287-4C49-B4A0-BF4BB7D5435D}.Release|x64.Build.0 = Release|Any CPU
 		{C8BDC0AA-B287-4C49-B4A0-BF4BB7D5435D}.Release|x86.ActiveCfg = Release|Any CPU
 		{C8BDC0AA-B287-4C49-B4A0-BF4BB7D5435D}.Release|x86.Build.0 = Release|Any CPU
+		{6CEE5A5A-9837-46B4-8012-0E0D00AA8EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CEE5A5A-9837-46B4-8012-0E0D00AA8EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CEE5A5A-9837-46B4-8012-0E0D00AA8EBC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6CEE5A5A-9837-46B4-8012-0E0D00AA8EBC}.Debug|x64.Build.0 = Debug|Any CPU
+		{6CEE5A5A-9837-46B4-8012-0E0D00AA8EBC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6CEE5A5A-9837-46B4-8012-0E0D00AA8EBC}.Debug|x86.Build.0 = Debug|Any CPU
+		{6CEE5A5A-9837-46B4-8012-0E0D00AA8EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CEE5A5A-9837-46B4-8012-0E0D00AA8EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CEE5A5A-9837-46B4-8012-0E0D00AA8EBC}.Release|x64.ActiveCfg = Release|Any CPU
+		{6CEE5A5A-9837-46B4-8012-0E0D00AA8EBC}.Release|x64.Build.0 = Release|Any CPU
+		{6CEE5A5A-9837-46B4-8012-0E0D00AA8EBC}.Release|x86.ActiveCfg = Release|Any CPU
+		{6CEE5A5A-9837-46B4-8012-0E0D00AA8EBC}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

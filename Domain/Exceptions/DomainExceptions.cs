@@ -22,4 +22,30 @@ namespace Domain.Exceptions
     /// </summary>
     public sealed class InvalidRtnException(string message)
         : DomainException(message);
+
+    /// <summary>
+    /// Raised when a participant's net debit position would exceed their cap.
+    /// This is a hard stop — do not settle.
+    /// </summary>
+    public sealed class NetDebitCapExceededException(
+        string rtn, long capCents, long netDebitCents)
+        : DomainException(
+            $"Participant {rtn} net debit {netDebitCents:N0}¢ exceeds cap {capCents:N0}¢");
+
+    /// <summary>
+    /// Raised when an attempt is made to transition a settlement cycle
+    /// to an invalid state (e.g. Open → Settled without going through Closed).
+    /// </summary>
+    public sealed class InvalidCycleTransitionException(
+        string currentStatus, string targetStatus)
+        : DomainException(
+            $"Cannot transition settlement cycle from {currentStatus} to {targetStatus}");
+
+    /// <summary>
+    /// Raised when a transaction allocation is attempted on a cycle that is
+    /// no longer accepting transactions (Closed / Settled / Failed).
+    /// </summary>
+    public sealed class CycleNotAcceptingTransactionsException(Guid cycleId, string status)
+        : DomainException(
+            $"Settlement cycle {cycleId} is in status '{status}' and cannot accept new transactions");
 }

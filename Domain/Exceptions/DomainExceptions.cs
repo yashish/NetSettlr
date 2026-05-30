@@ -48,4 +48,14 @@ namespace Domain.Exceptions
     public sealed class CycleNotAcceptingTransactionsException(Guid cycleId, string status)
         : DomainException(
             $"Settlement cycle {cycleId} is in status '{status}' and cannot accept new transactions");
+
+    /// <summary>
+    /// Raised by the NACHA parser when the file is structurally invalid
+    /// (wrong record length, bad checksum, missing header/footer, etc.).
+    /// </summary>
+    public sealed class NachaParseException(string message, int? lineNumber = null)
+        : DomainException(lineNumber.HasValue
+            ? $"NACHA parse error at line {lineNumber}: {message}"
+            : $"NACHA parse error: {message}");
+
 }
